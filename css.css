@@ -1,0 +1,112 @@
+:root {
+    --kolor-zielony: rgb(66, 255, 129);
+    --kolor-zielony-hover: rgb(0, 247, 132);;
+    --kolor-niebieski: rgb(152, 184, 255);
+}
+
+body {
+    padding: 0px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 15px 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+
+#progress {
+    display: block;
+    border-radius:4px;
+    height: 20px;
+}
+
+#progress-value {
+    background:#ffa200;
+    width: 0;
+    height: 100%;
+    border-radius:4px;
+    display: flex;
+    /* align-items: center;    */
+}
+
+#progress-text {
+    font-weight: normal;
+}
+
+.desktop-visible {
+    display: none;
+}
+
+.toggle-col {
+    display: none;
+}
+
+.toggle-row > td {
+    border: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: table-row;
+}
+
+.files-in-dir {
+    max-width: 50px;
+}
+
+.gray-color {
+    background-color: rgb(240, 240, 240);
+}
+
+.red-color {
+    background-color: rgb(255, 85, 85);
+}
+
+.blue-color {
+    background-color: var(--kolor-niebieski);
+}
+
+.green-color {
+    background-color: var(--kolor-zielony);
+}
+
+
+
+@media (min-width: 600px) {
+
+    table {
+        width: 80%; 
+        margin: 0 auto;
+    }
+
+    .desktop-visible {
+        display: table-cell;
+    }
+
+    .toggle-row {
+        display: none;
+    }
+
+    .toggle-col {
+        display: table-cell;
+    }
+}
+
+@media (min-width: 1200px) {
+    table {
+        width: 65%; 
+        margin: 0 auto;
+    }
+}
